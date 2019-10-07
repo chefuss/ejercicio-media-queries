@@ -1,4 +1,4 @@
- body {
+body {
   max-width: 1080px;
   margin: 0 auto;
   font-size: 1em;
@@ -14,11 +14,10 @@
   width: 100%;
 }
 
-@media screen and (min-width:768px) {
-  [class|="col"] {
+@media screen and (min-width: 768px) {
+  [class|="col"]:not(.col-12) {
     width: 50%;
   }
-
   .row {
     display: flex;
     justify-content: space-between;
@@ -27,7 +26,6 @@
 }
 
 @media screen and (min-width: 960px) {
-
   .col-1 {
     width: 6.481481481% !important;
   }
@@ -35,7 +33,7 @@
     width: 14.81481481% !important;
   }
   .col-3 {
-    width: 23.14814815% !important;
+    width: 23.14814815% !important ;
   }
   .col-4 {
     width: 31.48148148% !important;
@@ -59,11 +57,9 @@
     width: 81.48148148% !important;
   }
   .col-11 {
-    width: 89.81481481% !important
+    width: 89.81481481% !important;
   }
   .col-12 {
     width: 100% !important;
   }
-
 }
-
