@@ -15,7 +15,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  [class|="col"] {
+  [class|="col"]:not(.col-12) {
     width: 50%;
   }
   .row {
